@@ -1,0 +1,9 @@
+$test: steelblue;
+
+%bg-color {
+  background: $test;
+}
+
+body {
+  @extend %bg-color
+}
