@@ -1,6 +1,6 @@
 # My portfolio website
 
-This is a website to tell a little bit about me as a developer and showcase my work.
+A website to tell a little bit about myself as a developer and showcase my work.
 
 ## Developer guide:
 
