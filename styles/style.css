@@ -32,11 +32,17 @@ body {
 
 .header {
   background: rgb(255, 255, 255);
-  display: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar {
   padding: 24px 0;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
