@@ -1,0 +1,5 @@
+// This unit aims to keep spacing consistency by always multipling a given by 8 pixels.
+// E.g.: padding-top: spacing(2); outputs padding-top: 16px;
+@function spacing($unit: 1) {
+  @return 8px * $unit;
+}

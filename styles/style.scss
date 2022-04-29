@@ -1,9 +1,25 @@
-$test: steelblue;
+// Font color
+$font-color-primary: rgb(0, 0, 0);
 
-%bg-color {
-  background: $test;
-}
+// Base colors
+$header-base-color: rgb(248, 204, 46);
+$header-base-color-light: rgba(248, 204, 46, 0.13);
 
-body {
-  @extend %bg-color
-}
+$about-base-color: rgb(0, 110, 127);
+$about-base-color-light: rgb(0, 110, 127, 0.13);
+
+$projec-base-color: rgb(178, 39, 39);
+$projec-base-color-light: rgb(178, 39, 39, 0.13);
+
+// Responsive breakpoints
+$mobile-large: 425px;
+
+// Main container max size
+$main-container-max: 1400px;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Passion+One&display=swap");
+
+@import "./utilities";
+@import "./reset";
+@import "./common";
+@import "./header";
