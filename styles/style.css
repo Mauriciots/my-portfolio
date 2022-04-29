@@ -11,14 +11,60 @@ h6 {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 body {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.1;
 }
 
-.logo {
+.header {
+  background: rgb(255, 255, 255);
+  display: fixed;
+}
+
+.navbar {
+  padding: 24px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+.navbar__logo {
   font-family: "Passion One", cursive;
   font-size: 24px;
   color: rgb(248, 204, 46);
+}
+.navbar__menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  gap: 24px;
+}
+.navbar__menu-item:hover, .navbar__menu-item--selected {
+  border-bottom: 4px solid rgb(248, 204, 46);
+}
+.navbar__menu-item--no-highlight:hover {
+  border-bottom: none;
+}
+.navbar__button {
+  background: rgb(248, 204, 46);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 1px 8px lightgrey;
+}
+.navbar__button:hover {
+  background: #f7c615;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+.header {
+  background: $bg-color;
+  display: fixed;
+}
+
+.navbar {
+  padding: spacing(3) 0;
+  max-width: $main-container-max;
+  margin: 0 auto;
+  display: flex;
+
+  &__logo {
+    font-family: "Passion One", cursive;
+    font-size: 24px;
+    color: $header-base-color;
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    gap: spacing(3);
+  }
+
+  &__menu-item {
+    &:hover,
+    &--selected {
+      border-bottom: 4px solid $header-base-color;
+    }
+
+    &--no-highlight:hover {
+      border-bottom: none;
+    }
+  }
+
+  &__button {
+    background: $header-base-color;
+    padding: spacing(1) spacing(2);
+    border-radius: spacing(1);
+    color: $font-color-secondary;
+    box-shadow: 2px 1px 8px $shadow-color;
+
+    &:hover {
+      background: darken($header-base-color, 5%);
+    }
+  }
+}
