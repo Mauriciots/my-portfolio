@@ -1,7 +1,7 @@
 $square-gap-size: spacing(2);
-$square-lg-size: spacing(25);
-$square-md-size: spacing(20);
-$square-sm-size: spacing(15);
+$square-lg-size: spacing(20);
+$square-md-size: spacing(15);
+$square-sm-size: spacing(10);
 
 .about {
   background: $about-base-color-light;
@@ -32,7 +32,7 @@ $square-sm-size: spacing(15);
     display: flex;
     flex-flow: row wrap;
     width: $square-lg-size * 2 + $square-gap-size;
-    height: $square-md-size + $square-lg-size + $square-gap-size;
+    height: $square-lg-size * 2;
     align-items: center;
     align-content: center;
   }
@@ -67,5 +67,17 @@ $square-sm-size: spacing(15);
     width: $square-lg-size;
     margin-left: $square-gap-size;
     align-self: flex-start;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .about {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__squares {
+      margin: spacing(3) auto 0;
+    }
   }
 }

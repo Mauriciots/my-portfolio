@@ -8,8 +8,6 @@
   &__title {
     background: $header-base-color-light;
     padding: spacing(6) spacing(10);
-    font-size: 6rem;
-    max-width: 90%;
   }
 
   &__diamond {
@@ -31,8 +29,6 @@
   .hero {
     &__title {
       padding: spacing(4) spacing(2);
-      font-size: $mobile-font-size-title;
-      max-width: none;
     }
   }
 }
