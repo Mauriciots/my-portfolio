@@ -1,0 +1,44 @@
+$skills-item-width: spacing(40);
+
+.skills {
+  padding: spacing(5) 0;
+
+  &__title {
+    @extend %section-layout;
+    color: $about-base-color-light;
+  }
+
+  &__container {
+    @extend %section-layout;
+    margin-top: spacing(4);
+    display: grid;
+    grid-template-columns: repeat(3, $skills-item-width);
+    justify-content: space-between;
+    padding-left: spacing(3);
+  }
+
+  &__column {
+    background: $about-base-color-light;
+    padding-bottom: spacing(1);
+  }
+
+  &__item {
+    font-size: 1.5rem;
+    color: $about-base-color;
+    background: $about-base-color-light;
+    padding: spacing(2);
+    margin-left: spacing(-1);
+    margin-top: spacing(1);
+    width: $skills-item-width;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .skills {
+    &__container {
+      grid-template-columns: $skills-item-width;
+      row-gap: spacing(1);
+      justify-content: center;
+    }
+  }
+}

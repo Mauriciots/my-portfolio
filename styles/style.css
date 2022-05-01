@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Passion+One&display=swap");
-.about__container, .hero, .navbar {
+.skills__container, .skills__title, .about__container, .hero, .navbar {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 16px;
@@ -44,6 +44,11 @@ body {
 
 .title {
   font-size: 6rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -245,5 +250,39 @@ body {
   }
   .about__squares {
     margin: 24px auto 0;
+  }
+}
+.skills {
+  padding: 40px 0;
+}
+.skills__title {
+  color: rgba(0, 110, 127, 0.13);
+}
+.skills__container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: space-between;
+  padding-left: 24px;
+}
+.skills__column {
+  background: rgba(0, 110, 127, 0.13);
+  padding-bottom: 8px;
+}
+.skills__item {
+  font-size: 1.5rem;
+  color: rgb(0, 110, 127);
+  background: rgba(0, 110, 127, 0.13);
+  padding: 16px;
+  margin-left: -8px;
+  margin-top: 8px;
+  width: 320px;
+}
+
+@media (max-width: 425px) {
+  .skills__container {
+    grid-template-columns: 320px;
+    row-gap: 8px;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
