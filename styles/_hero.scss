@@ -29,7 +29,7 @@
   .hero {
     &__title {
       padding: spacing(4) spacing(2);
-      font-size: 3.5rem;
+      font-size: $mobile-font-size-title;
       max-width: none;
     }
   }
