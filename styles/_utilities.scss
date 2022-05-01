@@ -3,3 +3,9 @@
 @function spacing($unit: 1) {
   @return 8px * $unit;
 }
+
+%section-layout {
+  max-width: $main-container-max;
+  margin: 0 auto;
+  padding: 0 spacing(2);
+}
