@@ -1,3 +1,5 @@
+$projects-container-max-width: $main-container-max * 0.8;
+
 .projects {
   &__title-container {
     padding: spacing(5) 0;
@@ -7,7 +9,7 @@
   &__title {
     @extend %section-layout;
     color: $projects-base-color-light;
-    margin-bottom: spacing(20);
+    margin-bottom: spacing(25);
   }
 
   &__container {
@@ -15,27 +17,62 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    padding: 0 spacing(2) spacing(6);
+    max-width: $projects-container-max-width;
+    margin: spacing(-25) auto 0;
+    gap: spacing(2);
+  }
+
+  &__item {
+    border-radius: spacing(1);
+    padding: spacing(3);
   }
 
   &__item-portrait {
     background: $about-base-color-light;
     border: 1px solid $about-base-color;
-    width: 400px;
-    height: 500px;
+    width: calc(60% - spacing(2));
   }
 
   &__item-square {
     background: $header-base-color-light;
     border: 1px solid $header-base-color;
-    width: 400px;
-    height: 400px;
+    align-self: flex-end;
+    width: 40%;
   }
 
   &__item-landscape {
     background: $projects-base-color-light;
     border: 1px solid $projects-base-color;
-    width: 550px;
-    height: 400px;
+  }
+
+  &__item-image {
+    width: 100%;
+    border-radius: spacing(1);
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .projects {
+    &__item-portrait,
+    &__item-square,
+    &__item-landscape {
+      width: 100%;
+      background: transparent;
+    }
+
+    &__item {
+      border: none;
+      padding: 0;
+    }
+
+    &__title {
+      margin-bottom: spacing(3);
+    }
+
+    &__container {
+      background: $projects-base-color-light;
+      margin: 0 auto;
+    }
   }
 }
