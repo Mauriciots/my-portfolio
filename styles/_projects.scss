@@ -1,0 +1,41 @@
+.projects {
+  &__title-container {
+    padding: spacing(5) 0;
+    background: $projects-base-color-light;
+  }
+
+  &__title {
+    @extend %section-layout;
+    color: $projects-base-color-light;
+    margin-bottom: spacing(20);
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+  }
+
+  &__item-portrait {
+    background: $about-base-color-light;
+    border: 1px solid $about-base-color;
+    width: 400px;
+    height: 500px;
+  }
+
+  &__item-square {
+    background: $header-base-color-light;
+    border: 1px solid $header-base-color;
+    width: 400px;
+    height: 400px;
+  }
+
+  &__item-landscape {
+    background: $projects-base-color-light;
+    border: 1px solid $projects-base-color;
+    width: 550px;
+    height: 400px;
+  }
+}
