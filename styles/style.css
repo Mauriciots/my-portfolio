@@ -9,6 +9,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-weight: 400;
 }
 
 * {
@@ -28,6 +29,12 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.1;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding-top: 120px;
 }
 
 .header {
@@ -73,4 +80,28 @@ body {
 }
 .navbar__button:hover {
   background: #f7c615;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__title {
+  background: rgba(248, 204, 46, 0.13);
+  padding: 48px 80px;
+  font-size: 6rem;
+  max-width: 90%;
+}
+.hero__diamond {
+  background: rgba(248, 204, 46, 0.13);
+  width: 56px;
+  height: 56px;
+  margin-top: -28px;
+  transform: rotate(45deg);
+}
+.hero__avatar {
+  width: 96px;
+  border-radius: 50%;
+  margin-top: 24px;
 }/*# sourceMappingURL=style.css.map */
