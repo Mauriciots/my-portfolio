@@ -7,5 +7,11 @@ body {
 .main {
   margin: 0 auto;
   max-width: $main-container-max;
-  padding-top: $header-height + spacing(5);
+  padding: $header-height + spacing(5) spacing(2) 0;
+}
+
+@media (max-width: $mobile-large) {
+  .main {
+    padding-top: $header-height + spacing(2);
+  }
 }

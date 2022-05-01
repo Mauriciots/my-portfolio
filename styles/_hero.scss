@@ -24,3 +24,13 @@
     margin-top: spacing(3);
   }
 }
+
+@media (max-width: $mobile-large) {
+  .hero {
+    &__title {
+      padding: spacing(4) spacing(2);
+      font-size: 3.5rem;
+      max-width: none;
+    }
+  }
+}
