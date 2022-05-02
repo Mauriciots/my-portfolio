@@ -8,6 +8,17 @@
     menuEl.classList.toggle("navbar__menu--expanded")
   );
 
+  document.querySelectorAll(".menu__link").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      const isMobileMenuOpen = menuEl.classList.contains(
+        "navbar__menu--expanded"
+      );
+      if (isMobileMenuOpen) {
+        menuEl.classList.toggle("navbar__menu--expanded");
+      }
+    });
+  });
+
   bodyEl.onscroll = logScroll;
 
   setTimeout(logScroll, 0);
