@@ -1,0 +1,77 @@
+.footer {
+  margin-top: spacing(5);
+
+  &__container {
+    padding: spacing(5) 0;
+    background: $about-base-color-light;
+    border-bottom: spacing(4) solid $about-base-color;
+  }
+
+  &__contact {
+    @extend %section-layout;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    column-gap: spacing(4);
+  }
+
+  &__contact-form-title {
+    font-size: 3rem;
+    color: $about-base-color-light;
+  }
+
+  &__social {
+    border-radius: spacing(1);
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: spacing(2);
+  }
+
+  &__social-image {
+    width: spacing(5);
+  }
+
+  &__social-title {
+    font-size: 3rem;
+    color: $about-base-color-light;
+  }
+
+  &__copyright {
+    font-size: 0.85rem;
+    margin-bottom: spacing(3);
+  }
+
+  &__logo {
+    font-family: "Passion One", cursive;
+    font-size: 48px;
+    color: $about-base-color;
+    margin-bottom: spacing(1);
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .footer {
+    margin-top: 0;
+
+    &__contact {
+      @extend %section-layout;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__social {
+      margin-top: spacing(5);
+    }
+
+    &__copyright {
+      text-align: center;
+    }
+
+    &__social-list {
+      justify-content: center;
+    }
+  }
+}

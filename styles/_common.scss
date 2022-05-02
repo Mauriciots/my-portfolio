@@ -1,4 +1,6 @@
-body {
+body,
+input,
+textarea {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.3;
@@ -16,6 +18,47 @@ body {
 .subtitle {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: spacing(2) 0;
+
+  &__label {
+    color: $about-base-color;
+    font-size: 0.8;
+    font-weight: 700;
+    padding-bottom: spacing(0.5);
+  }
+
+  &__input,
+  &__text {
+    padding: spacing(1);
+    border: none;
+    background: $about-base-color-light;
+    box-shadow: 1px 2px 5px $about-base-color-light;
+  }
+
+  &__text {
+    height: 6rem;
+  }
+}
+
+.form-submit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  &__button {
+    padding: spacing(1) spacing(3);
+    background: $about-base-color;
+    box-shadow: 1px 2px 5px $about-base-color-light;
+    border: none;
+    font-weight: 700;
+    color: $font-color-secondary;
+    width: 100%;
+    border-radius: spacing(1);
+  }
 }
 
 @media (max-width: $mobile-large) {
